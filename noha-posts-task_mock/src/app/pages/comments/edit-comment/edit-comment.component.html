@@ -1,0 +1,42 @@
+<nav aria-label="breadcrumb" class="breadcrumb_nav">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    <li class="breadcrumb-item"><a routerLink="/view-post/{{post_id}}">{{post_name}}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit {{comment.commentBody}}</li>
+  </ol>
+</nav>
+
+<div class="content">
+  <div class="container">
+
+    <h4 class="add_post_title">Edit comment:</h4>
+
+    <div class="row">
+      <div class="col-md-5">
+        <div class="add_post_image">
+          <img src="../../../../assets/photo-1519337265831-281ec6cc8514.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-7">
+
+        <form #editCommentForm="ngForm" (ngSubmit)="editComment(editCommentForm)">
+
+          <div class="form-group">
+            <label>Your name <span style="color: #f00;">*</span>:</label>
+            <input type="text" class="form-control" placeholder="Your name" [(ngModel)]="comment.commentAuthor"
+              name="commentAuthor" #commentAuthor="ngModel" required>
+          </div>
+
+          <div class="form-group">
+            <label>Comment <span style="color: #f00;">*</span>:</label>
+            <textarea type="text" class="form-control" placeholder="Your comment" [(ngModel)]="comment.commentBody"
+              name="commentBody" #commentBody="ngModel" required></textarea>
+          </div>
+
+          <input type="submit" value="Save" class="save btn btn-primary">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

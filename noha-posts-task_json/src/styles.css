@@ -1,0 +1,432 @@
+/* You can add global styles to this file, and also import other style files */
+
+.content {
+    padding: 40px 0;
+}
+
+.content a button i {
+    margin-right: 10px;
+}
+
+.header {
+    background: url(../src/assets/photo-1499951360447-b19be8fe80f5.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.header .navbar {
+    background: rgba(62, 0, 60, 0.2) !important;
+}
+
+.header .overlay {
+    background: rgba(62, 0, 60, 0.5);
+    width: 100%;
+    height: 600px;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.header .navbar-nav {
+    float: right;
+    right: 20px;
+    position: absolute;
+    text-align: right;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff !important;
+    font-size: 18px;
+}
+
+.header .text {
+    color: #fff;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.header .text h3 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header .text h3 span {
+    color: rgba(62, 0, 60, 1);
+
+}
+
+.header .text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.header .text button {
+    background: rgba(62, 0, 60, 1);
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 18px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+footer {
+    background: #542c82;
+    padding: 30px;
+}
+
+footer .sec h3 {
+    color: #fff;
+}
+
+footer .sec p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+footer .social a li {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+footer .links a {
+    text-decoration: none;
+
+}
+
+footer .links a li {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .sec .contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .sec .contact p i {
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background: #94368e;
+}
+
+.copyright p {
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.content .blog-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content .blog-image .content-overlay {
+    background: rgba(62, 0, 60, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content .blog-image:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content .blog-image:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+.fadeIn-left {
+    left: 20%;
+}
+
+.edit_button,
+.delete_button {
+    border-radius: 50%;
+}
+
+.edit_button {
+    margin-right: 10px;
+}
+
+.content .blog-image a button i {
+    margin: 0;
+}
+
+.content .post-content {
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 5px #ddd;
+    margin-bottom: 10px;
+
+}
+
+.content .post-content a {
+    text-decoration: none;
+}
+
+.content .post-content a h4 {
+    color: #000;
+}
+
+.content .post-content a h4:hover {
+    color: #552e82
+}
+
+.content .post-content h5 {
+    display: inline-block;
+    color: #888;
+    font-size: 15px;
+}
+
+.content .post-content h5 i {
+    margin-right: 10px;
+    color: #552e82;
+}
+
+.content .post-content h5.date {
+    margin-right: 10px;
+}
+
+.content .post-content .view_button {
+    display: block;
+}
+
+.content .post-content .view_button {
+    background: #552e82;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.content .content_header {
+    margin-bottom: 20px;
+}
+
+.content .add_post_image img {
+    width: 100%;
+}
+
+.content .add_post_title {
+    margin-bottom: 20px;
+}
+
+.content .add_post_title,
+.content form label {
+    font-weight: bold;
+    color: rgba(62, 0, 60, 1);
+}
+
+.content form label {
+    margin-bottom: 10px;
+}
+
+.content form .form-control {
+    background: #f0f0f0;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.content form textarea {
+    height: 100px;
+}
+
+.content form input:focus {
+    box-shadow: none;
+}
+
+.content .post-content#post_details {
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.content .post-content h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.comments {
+    background: #f0f0f0;
+    padding: 20px 0;
+}
+
+.comments h4.title {
+    color: rgba(62, 0, 60, 1);
+}
+
+.comments .comment_header {
+    margin-bottom: 20px;
+}
+
+.comments .comment .row {
+    margin-bottom: 10px;
+}
+
+.comments .comment h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgba(62, 0, 60, 1);
+}
+
+.comments .comment h5 {
+    display: inline-block;
+    color: #888;
+    font-size: 15px;
+}
+
+.comments .comment h5 i {
+    color: #542c82;
+    margin-right: 10px;
+}
+
+.comments .comment h5.date {
+    margin-right: 10px;
+}
+
+.alert {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+nav.breadcrumb_nav .breadcrumb {
+    background: #94368e;
+    padding: 10px 20px;
+    width: 70%;
+    margin: auto;
+}
+
+nav.breadcrumb_nav .breadcrumb .breadcrumb-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #fff;
+}
+
+.breadcrumb-item.active {
+    color: #fff;
+}
+
+.content.about img {
+    width: 100%;
+}
+
+.content.about .about_content h3 {
+    font-size: 22px;
+    color: #542c82;
+    font-weight: bold;
+}
+
+.content.about .about_content p {
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+.navbar-light .navbar-toggler {
+    color: #fff !important;
+    border-color: #fff;
+}
+
+
+@media(max-width:768px) {
+    .header .navbar-nav {
+        right: 0;
+        width: 100%;
+        background: #542c82;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .header .text h3 {
+        font-size: 36px;
+    }
+
+    .header .text p {
+        padding: 0 20px;
+    }
+
+    .header .text {
+        margin-top: 40%;
+    }
+
+    nav.breadcrumb_nav .breadcrumb {
+        width: 95%;
+    }
+
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:hover {
+        font-size: 18px;
+    }
+
+}

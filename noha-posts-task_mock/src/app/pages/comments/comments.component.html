@@ -1,0 +1,46 @@
+<div class="comments">
+    <div class="container">
+        <div class="comment_header">
+            <h4 class="title" style="display: inline-block;">Comments</h4>
+            <div class="button" style="float: right;">
+                <a routerLink="/add-comment"><button type="button" class="btn btn-success" style="float: right;"><i
+                            class="fas fa-plus"></i> Add Comment</button></a>
+            </div>
+        </div>
+
+
+        <div class="no_posts" *ngIf="comments.length === 0">
+            <div class="alert alert-danger" role="alert">
+                No comments yet, <a routerLink="/add-comment" class="alert-link">Add your first comment</a>.
+            </div>
+        </div>
+
+
+        
+        <div class="comment" *ngIf="comments.length > 0">
+
+            <div class="row" *ngFor="let comment of comments">
+                <div class="col-md-2">
+                    <div class="image text-center">
+                        <img src="../../../assets/1.jpeg" style="width: 100px;height: 100px;border-radius: 50%;">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4>{{comment.body}}</h4>
+                    <h5 class="date"><i class="far fa-calendar-alt"></i> {{comment.date | date}}</h5>
+                    <h5><i class="fas fa-user"></i> {{comment.author}}</h5>
+                </div>
+
+                <div class="col-md-3">
+                    <a routerLink="/edit-comment/{{comment.id}}" (click)="onClick(comment)"
+                        style="margin-right: 10px;"><button type="button" class="btn btn-primary"><i
+                                class="fas fa-pencil-alt"></i> Edit</button></a>
+                    <a (click)="delete(comment.id,comment.body)"><button type="button" class="btn btn-danger"
+                            style="margin-right: 10px;"><i class="fas fa-times"></i> Delete</button></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

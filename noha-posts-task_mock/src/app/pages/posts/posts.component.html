@@ -1,0 +1,48 @@
+<div class="content">
+  <div class="container">
+
+    <div class="content_header">
+      <h4 style="display: inline-block;">Posts</h4>
+
+      <div class="button" style="float: right;">
+        <a routerLink="/add-post"><button type="button" class="btn btn-success" style="float: right;"><i
+              class="fas fa-plus"></i> Add post</button></a>
+      </div>
+    </div>
+
+    <div class="no_posts" *ngIf="posts.length === 0">
+      <div class="alert alert-danger" role="alert">
+        No posts yet, <a routerLink="/add-post" class="alert-link">Add your first post</a>.
+      </div>    </div>
+    <div class="row" *ngIf="posts.length > 0">
+      <div class="col-md-4" *ngFor="let post of posts">
+        <div class="blog-image">
+          <div class="content-overlay"></div>
+
+          <img src="../../../../assets/photo-1522199755839-a2bacb67c546.jpg" style="width: 100%;">
+          <div class="content-details fadeIn-top fadeIn-left">
+            <a routerLink="/edit-post/{{post.id}}" (click)="onClick(post)"> <button type="button"
+                class="btn btn-primary edit_button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit post">
+                <i class="fas fa-pencil-alt"></i></button></a>
+            <a routerLink="" (click)="delete(post.id,post.post_name)"> <button type="button" class="btn btn-danger delete_button"
+                data-bs-toggle="tooltip" data-bs-placement="top" title="Delete post"> <i
+                  class="fas fa-times"></i></button></a>
+
+
+          </div>
+        </div>
+
+        <div class="post-content">
+          <a routerLink="/view-post/{{post.id}}" (click)="onClick(post)">
+
+            <h4>{{post.post_name}}</h4>
+          </a>
+          <h5 class="date"><i class="far fa-calendar-alt"></i> {{post.post_date | date}}</h5>
+          <h5><i class="fas fa-user"></i> {{post.post_author}}</h5>
+          <p>{{post.post_breif_description}}</p>
+          <a routerLink="/view-post/{{post.id}}" (click)="onClick(post)"><button type="button" class=" view_button"> Read more</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
